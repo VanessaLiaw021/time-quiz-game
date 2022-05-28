@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Time Quiz Game</title>
+</head>
+<body>
+
+    <!--Header Section-->
+    <header>
+         <!--User can view high score-->
+         <a href="highScore.html"><p id="view-score">View High Scores</p></a>
+
+         <!--Timer for the quiz-->
+         <p>Timer: <span id="timer">0</span></p>
+    </header>
+
+    <!--This is what the user see when they first load the application-->
+    <section id="start-menu">
+
+        <!--Title-->
+        <h1>Coding Quiz Challenge</h1>
+
+        <!--Instructions-->
+        <p>
+            Try to answer the following code related questions within the time limit.<br>Keep in mind that incorrect 
+            answers will penalize your score/time<br> by ten seconds!
+        </p>
+
+        <!--Button to start-->
+        <button id="start-button">Start Quiz</button>
+    </section>
+
+    <!--This is where the quiz content will display-->
+    <section id="quiz" class="hide">
+
+        <!--Quiz question-->
+        <h2 id="questions"></h2>
+
+        <!--Quiz question choices-->
+        <div class="quiz-choices">
+            <button id="choice-1" class="btn"></button>
+            <button id="choice-2" class="btn"></button>
+            <button id="choice-3" class="btn"></button>
+            <button id="choice-4" class="btn"></button>
+        </div>
+        
+        <!--Determine if correct or wrong answer-->
+        <div id="answer" class="hide">
+            <div class="solid-line"></div>
+            <p id="correct-wrong-answer"></p>
+        </div>
+    </section>
+
+    <!--This is where the user input their initials-->
+    <section id="initials" class="hide">
+
+        <!--Letting the user know their done-->
+        <h2>All Done!</h2>
+
+        <!--Letting the user know their score-->
+        <p class="final-result">Your final score is <span id="final-score">0</span></p>
+
+        <!--Form to enter their initials-->
+        <form>
+            <p>Enter Initials:</p>
+            <input type="text" id="user-initials" name="initials">
+            <button id="submit">Submit</button>
+        </form>
+    </section>
+    
+    <!--JavaScript File-->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+:root {
+    --indigo: #4B0082;
+    --white: #fff;
+    --light-purple: #9370DB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: pink;
+}
+
+/* Start Header Section */
+header {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    padding: 20px;
+    margin-top: 80px;
+    border-radius: 10px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header #view-score {
+    cursor: pointer;
+    color: var(--light-purple);
+}
+
+header #view-score:hover {
+    color: var(--indigo);
+}
+/* End Header Section */
+
+/* Start the Start Menu Section */
+#start-menu {
+    text-align: center;
+    margin-top: 90px;
+}
+
+#start-menu h1 {
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+#start-menu p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding: 20px;
+}
+
+#start-menu button {
+    padding: 15px;
+    font-size: 15px;
+    background: var(--indigo);
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#start-menu button:hover {
+    background: var(--light-purple);
+}
+/* End the Start Menu Section */
+
+/* Start Quiz Section */
+#quiz {
+    text-align: center;
+    padding-top: 80px;
+}
+
+#quiz h2 {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.quiz-choices {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.btn {
+    padding: 15px;
+    font-size: 16px;
+    background: var(--indigo);
+    color: white; 
+    border: none;
+    margin: 20px 300px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--light-purple);
+}
+
+#answer .solid-line {
+    border: 1px solid black;
+    margin-bottom: 20px;
+    margin: 0 460px 20px 460px;
+}
+
+#correct-wrong-answer {
+    color: var(--light-purple);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-style: italic;
+}
+/* End Quiz Section */
+
+/* Start Initials Section */
+#initials {
+    margin: 0 auto;
+    text-align: justify;
+    width: 400px;
+    padding-top: 80px;
+}
+
+#initials h2 {
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+#initials .final-result {
+    font-size: 28px;
+    padding-bottom: 20px;
+}
+
+form {
+    display: flex;
+}
+
+form p {
+    font-size: 20px;
+    padding-right: 15px;
+    padding-top: 5px;
+}
+
+input {
+    margin-right: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 150px;
+    height: 35px;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+#submit {
+    padding: 10px;
+    font-size: 16px;
+    background: var(--indigo);
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: var(--light-purple);
+}
+/* End Initials Section */
+
+/* Start High Score Section */
+#high-score {
+    margin: 0 auto;
+    text-align: justify;
+    width: 400px;
+    margin-top: 80px;
+}
+
+#high-score h2 {
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.display-score {
+    display: flex;
+    background-color: var(--light-purple);
+    padding: 15px;
+    color: white;
+    letter-spacing: 3px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#num-list {
+    margin-right: 10px;
+}
+
+.button button {
+    background-color: var(--indigo);
+    padding: 15px;
+    font-size: 15px;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+/* End High Score Section */
+
+.hide {
+    display: none;
+}
