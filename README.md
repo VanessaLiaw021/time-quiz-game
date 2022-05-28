@@ -49,4 +49,4 @@ This is where the initials and score will be displayed
 
 ## Authors and Acknowledgement
 
-Coded and Develop by Vanessa Liaw
+Coded and Develop by Vanessa Liaw (My commits disappear, because I accidentially deleted this repo, so I have to create a new one)
